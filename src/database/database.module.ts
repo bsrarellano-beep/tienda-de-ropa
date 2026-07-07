@@ -5,14 +5,14 @@ import { ConfigModule } from '../config/config.module';
 
 @Module({
   imports: [
-    ConfigModule // 👈 Mantenemos esto para que databaseProvider pueda usar las variables de entorno
+    ConfigModule // 
   ],
   providers: [
     ...databaseProvider, 
     ConfigService
   ],
   exports: [
-    ...databaseProvider // 👈 Exportamos la conexión manual para que los módulos la usen
+    ...databaseProvider 
   ], 
 })
 export class DatabaseModule {}

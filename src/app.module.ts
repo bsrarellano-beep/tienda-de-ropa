@@ -12,6 +12,8 @@ import { PersonaModule } from './modules/persona/persona.module';
 import { RoleModule } from './modules/role/role.module';
 import { ClienteModule } from './modules/cliente/cliente.module';
 import { PedidoModule } from './modules/pedido/pedido.module';
+import { TallaModule } from './modules/talla/talla.module';
+import { ColorModule } from './modules/color/color.module';
 
 @Module({
   imports: [
@@ -24,7 +26,9 @@ import { PedidoModule } from './modules/pedido/pedido.module';
     PersonaModule,
     RoleModule,
     ClienteModule,
-    PedidoModule
+    PedidoModule,
+    TallaModule,
+    ColorModule
   ],
   controllers: [AppController],
   providers: [AppService],

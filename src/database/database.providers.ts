@@ -10,7 +10,6 @@ export const databaseProvider = [
             const dataSource = new DataSource({
                 type: 'postgres',
                 host: config.get(Configuration.HOST),
-                // Aquí lee el puerto de tu archivo .env.development (5432) y lo convierte a número
                 port: parseInt(config.get(Configuration.PORT)), 
                 username: config.get(Configuration.USERNAME),
                 password: config.get(Configuration.PASSWORD),
